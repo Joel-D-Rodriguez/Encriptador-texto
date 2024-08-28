@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background-color: #f4f4fc;
+    font-size: 16px; /* Tamaño base de fuente para escalado */
+}
+
+header {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    padding: 0 20px; /* Espaciado interno */
+}
+
+.logo {
+    width: 100px;
+    height: auto; /* Mantiene la proporción original de la imagen */
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Alinea el contenido desde el inicio */
+    padding: 20px;
+    margin-top: 70px; /* Ajusta el contenido para no quedar debajo del header */
+    gap: 20px; /* Espacio entre los elementos */
+}
+
+.contenedorcajatexto {
+    flex: 1;
+    max-width: 100%; /* Asegura que el contenedor no exceda el ancho del viewport */
+    margin-right: 20px;
+}
+
+.cajatexto {
+    width: 100%;
+    height: auto; /* Ajusta la altura automáticamente */
+    border: none;
+    background-color: #f4f4fc;
+    cursor: pointer;
+    color: #0A3871;
+    font-size: 2rem; /* Escala el tamaño de la fuente */
+    font-weight: 400;
+}
+
+.cajatexto::placeholder {
+    color: #0A3871;
+}
+
+.alerta {
+    color: #495057;
+    margin-top: 20px;
+}
+
+.contenedor-botones {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.btn-encriptar, .btn-desencriptar {
+    width: 100%;
+    max-width: 328px;
+    height: 67px;
+    border-radius: 24px;
+    font-size: 1rem;
+    font-weight: 400;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-encriptar {
+    background-color: #0A3871;
+    color: white;
+}
+
+.btn-desencriptar {
+    background-color: #D8DFE8;
+    color: #0A3871;
+    border: 1px solid #0A3871;
+}
+
+.seccion2 {
+    width: 100%;
+    max-width: 400px;
+    height: auto; /* Ajusta la altura automáticamente */
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 32px;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.50);
+    position: fixed; /* Fija el elemento en el lado derecho de la página */
+    right: 0;
+    top: 20px; /* Ajusta el espacio desde la parte superior */
+    bottom: 20px; /* Ajusta el espacio desde la parte inferior */
+    overflow-y: auto; /* Permite el scroll si el contenido es demasiado alto */
+}
+
+.contenedormunieco {
+    padding-top: 50px;
+}
+
+.contenedor-parrafo {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.contenedor-parrafo img {
+    max-width: 100%;
+    height: auto; /* Mantiene la proporción original de la imagen */
+    margin-bottom: 20px; /* Espacio entre la imagen y el párrafo */
+}
+
+.contenedor-parrafo h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #343A40;
+}
+
+.contenedor-parrafo p {
+    font-size: 1rem;
+    color: #495057;
+}
+
+.contenedor-resultado {
+    width: 100%;
+    max-width: 320px;
+    margin-top: 20px;
+}
+
+.contenedor-resultado p {
+    color: #495057;
+    font-size: 1.5rem;
+    overflow-wrap: break-word; /* Asegura que el texto largo se ajuste al contenedor */
+}
+
+.contenedor-copiar {
+    display: flex;
+    justify-content: center;
+    position: fixed; /* Fija el elemento en el lado derecho de la página */
+    bottom: 20px; /* Ajusta el espacio desde la parte inferior */
+    right: 20px; /* Ajusta el espacio desde el lado derecho */
+}
+
+.btn-copiar {
+    width: 100%;
+    max-width: 328px;
+    height: 67px;
+    border-radius: 24px;
+    background-color: #ffffff;
+    color: #0A3871;
+    font-size: 1rem;
+    font-weight: 400;
+    border: 1px solid #0A3871;
+    cursor: pointer;
+}
+
+.ocultar {
+    display: none;
+}
